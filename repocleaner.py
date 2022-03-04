@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 Update APT package lists, disable all repos that cause errors
 (invalid GPG signature, HTTP errors, etc)
