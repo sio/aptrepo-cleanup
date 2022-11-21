@@ -44,6 +44,9 @@ def disable_repos(urls):
     sources = aptsources.sourceslist.SourcesList()
     disabled = []
     urls_seen = 0
+    urls = list(urls)
+    if len(urls) == 0:
+        return disabled
     for url in urls:
         if not url:
             continue
